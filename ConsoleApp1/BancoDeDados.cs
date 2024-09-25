@@ -1,6 +1,7 @@
 class BancoDeDados
 {
     List<Roupa> roupas = new List<Roupa>();
+    List<Pessoa> pessoas = new List<Pessoa>();
 
     public BancoDeDados()
     {
@@ -30,9 +31,24 @@ class BancoDeDados
             Console.WriteLine();
         }
     }
-    /*public List<Carro> getCarros()
+
+    public void SalvarPessoa(Pessoa pessoa)
     {
-        return carros;
+        pessoas.Add(pessoa);
     }
-    */
+
+    public void RemoverPessoa(Pessoa pessoa)
+    {
+        pessoas.Remove(pessoa);
+    }
+    
+    public List<Roupa> getRoupas()
+    {
+        return roupas;
+    }
+
+    public List<Pessoa> getPessoas()
+    {
+        return pessoas;
+    }
 }
